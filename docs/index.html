@@ -10,12 +10,12 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
-            color: #495057;
+            background-color: #343a40; /* Arkaplan rengi */
+            color: #f8f9fa; /* Yazı rengi */
         }
 
         header {
-            background-color: #343a40;
+            background-color: #212529; /* Header arkaplan rengi */
             color: #fff;
             text-align: center;
             padding: 2em;
@@ -25,13 +25,14 @@
             max-width: 800px;
             margin: 2em auto;
             padding: 1em;
-            background-color: #fff;
+            background-color: #f8f9fa; /* İçerik arkaplan rengi */
             border-radius: 8px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            color: #343a40; /* İçerik yazı rengi */
         }
 
         h1, h2, h3 {
-            color: #343a40;
+            color: #fff; /* Başlık yazı rengi */
         }
 
         ul {
@@ -43,8 +44,16 @@
             margin-bottom: 0.5em;
         }
 
+        .project-card {
+            padding: 1em;
+            background-color: #dee2e6; /* Proje kartı arkaplan rengi */
+            border-radius: 8px;
+            margin-bottom: 1em;
+            cursor: pointer;
+        }
+
         footer {
-            background-color: #343a40;
+            background-color: #212529; /* Footer arkaplan rengi */
             color: #fff;
             text-align: center;
             padding: 1em;
@@ -52,6 +61,18 @@
             bottom: 0;
             width: 100%;
         }
+
+        .cv-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1em;
+            display: inline-block;
+        }
+
     </style>
 </head>
 
@@ -68,11 +89,15 @@
             geliştirmekteyim ve yeni teknolojilere açığım.</p>
 
         <h2>Projelerim</h2>
-        <ul>
-            <li><strong>Proje 1:</strong> Proje açıklaması...</li>
-            <li><strong>Proje 2:</strong> Proje açıklaması...</li>
-            <!-- Daha fazla proje ekleyebilirsiniz -->
-        </ul>
+        <div class="project-card" onclick="window.location.href = 'proje1.html'">
+            <strong>Proje 1:</strong> Proje açıklaması...
+        </div>
+        <div class="project-card" onclick="window.location.href = 'proje2.html'">
+            <strong>Proje 2:</strong> Proje açıklaması...
+        </div>
+        <!-- Daha fazla proje ekleyebilirsiniz -->
+
+        <a href="cv.pdf" class="cv-button">CV'yi İndir</a>
     </section>
 
     <footer>
