@@ -59,13 +59,13 @@
             padding: 1em;
             position: fixed;
             bottom: 0;
-            height:20px;
+            height: 17px;
             width: 100%;
         }
 
         .cv-button {
-            background-color: #007bff;
-            color: #fff;
+            background-color: #ffd900;
+            color: #000000;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
@@ -74,6 +74,30 @@
             display: inline-block;
         }
 
+        .social-buttons {
+            margin-top: 1em;
+            text-align: center;
+        }
+
+        .social-buttons a {
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            background-color: #ffd900;
+            color: #000000;
+            border-radius: 50%;
+            line-height: 40px;
+            margin: 0 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-buttons a:hover {
+            background-color: #ff9500;
+        }
+        .cv-button:hover {
+            background-color: #ff9500;
+        }
     </style>
 </head>
 
@@ -81,33 +105,45 @@
 
     <header>
         <h1 style="margin-bottom: 0.5em;">Mustafa Emre Dikici</h1>
-        <p style="font-style: italic;">Web Geliştirici</p>
+        <p style="font-style: italic;">Computer Engineer</p>
+        <div class="social-buttons">
+            <a href="https://www.instagram.com/dkcemrex/?hl=tr">İnstagram</a>
+            <a href="https://www.linkedin.com/in/mustafa-emre-dikici-94a103250/">Linkedln</a>
+            <a href="mailto:destek@mustafaemredikici.com" >E-Mail</a>
+            <a href="https://medium.com/@dikiciemre" >Medium</a>
+
+
+            <!-- Diğer sosyal medya butonlarını buraya ekleyebilirsiniz -->
+        </div>
     </header>
 
     <section>
-        <h2 style="color: black">Hakkımda</h2>
-        <p>Merhaba, ben Mustafa Emre Dikici. Web geliştirme konusunda deneyime sahip bir profesyonelim. Kendimi sürekli
-            geliştirmekteyim ve yeni teknolojilere açığım.</p>
+        <h2 style="color: black">About Me</h2>
+        <p>Hello, I'm a computer engineer with a strong background in mobile application development. I have extensive experience, particularly with Flutter, and have built a deep understanding in this area. Additionally, I have been closely involved with frontend technologies such as React, HTML, CSS, Typescript, and JavaScript, and have developed projects using these tools.
 
-        <h2 style="color: black">Projelerim</h2>
+            On the backend side, I have worked on various projects using languages like Python, Java, and PHP. I am experienced in building robust and scalable backend systems with these languages.
+            
+            Overall, I possess comprehensive knowledge and experience in both frontend and backend development, and I thoroughly enjoy working on complex projects in these domains. With my passion for technology and a continuous desire to learn, I am dedicated to creating innovative and effective solutions.</p>
+
+        <h2 style="color: black">My Projects</h2>
         <div class="project-card" onclick="window.location.href = 'https://github.com/dikiciemre/REACT'">
-            <strong>React Projelerim: </strong>React Projelerim İçin Tıklayınız. [Click Here for My React Projects.]
+            <strong>React Projects: </strong>React Projelerim İçin Tıklayınız. [Click Here for My React Projects.]
         </div>
         
         <div class="project-card" onclick="window.location.href = 'https://github.com/dikiciemre/FLUTTER'">
-            <strong>Flutter Projelerim: </strong>Flutter Projelerim İçin Tıklayınız. [Click Here for My Flutter Projects.]        </div>
+            <strong>Flutter Projects: </strong>Flutter Projelerim İçin Tıklayınız. [Click Here for My Flutter Projects.]
         </div>
         
         <div class="project-card" onclick="window.location.href = 'https://github.com/dikiciemre/JAVA'">
-            <strong>Java Projelerim: </strong>Java Projelerim İçin Tıklayınız. [Click Here for My Java Projects.]        </div>
+            <strong>Java Projects: </strong>Java Projelerim İçin Tıklayınız. [Click Here for My Java Projects.]
         </div>
         
         <div class="project-card" onclick="window.location.href = 'https://github.com/dikiciemre/Python'">
-            <strong>Python Projelerim: </strong>Python Projelerim İçin Tıklayınız. [Click Here for My Python Projects.]        </div>
+            <strong>Python Projects: </strong>Python Projelerim İçin Tıklayınız. [Click Here for My Python Projects.]
         </div>
 
         <div class="project-card" onclick="window.location.href = 'https://github.com/dikiciemre/PHP'">
-            <strong>PHP Projelerim: </strong>PHP Projelerim İçin Tıklayınız. [Click Here for My PHP Projects.]        </div>
+            <strong>PHP Projects: </strong>PHP Projelerim İçin Tıklayınız. [Click Here for My PHP Projects.]
         </div>
         <!-- Daha fazla proje ekleyebilirsiniz -->
 
@@ -115,7 +151,8 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Mustafa Emre Dikici. Tüm hakları saklıdır.</p>
+    
+        <p>&copy; 2024 Mustafa Emre Dikici. All rights reserved.</p>
     </footer>
 
 </body>
