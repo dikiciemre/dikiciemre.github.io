@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Mustafa Emre Dikici|Ana Sayfa</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #FFD700; /* Sarı tonu */
+            color: #333; /* Metin rengi */
+            padding: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Yazıları ortalamak için */
+            align-items: center;
+        }
+
+        .menu li {
+            margin-left: 20px;
+        }
+
+        .menu li:first-child {
+            margin-left: 0;
+        }
+
+        .menu a {
+            color: #333; /* Link rengi */
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #FFA500; /* Hover efekti için turuncu tonu */
+        }
+
+        .menu a.active {
+            background-color: #FFA500; /* Aktif sayfada turuncu tonu */
+        }
+
+        .profile-picture {
+            width: 150px; /* Resim genişliği */
+            height: 150px; /* Resim yüksekliği */
+            border-radius: 50%; /* Yuvarlak kenarlıklar */
+            margin-right: 10px; /* Sağa boşluk */
+            display: block; /* Resmi bir blok olarak ayarlar */
+            margin: 0 auto; /* Yatayda ortalar */
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .profile-picture:hover {
+            transform: scale(1.1); /* Fare üzerine gelindiğinde resmi büyüt */
+            transition: transform 0.3s ease; /* Geçiş efekti */
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #FFA500;
+        }
+
+        .blog {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .blog h2 {
+            margin-bottom: 20px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .blog h2::after {
+            content: "\25BE"; /* Aşağı ok işareti */
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateY(50%);
+            font-size: 20px;
+            transition: transform 0.3s ease; /* Geçiş efekti */
+        }
+
+        .blog-content {
+            display: none;
+            transition: max-height 0.5s ease; /* Geçiş efekti */
+            overflow: hidden;
+        }
+
+        .blog-content p {
+            line-height: 1.6;
+        }
+
+        .show {
+            display: block !important;
+            max-height: 500px !important; /* İçerik yavaşça açılacak olan maksimum yükseklik */
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            background-color: #FFA500;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #FFD700; /* Hover efekti için turuncu tonu */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div>
+                <span class="logo"></span>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <img class="profile-picture" src="/githubwebsite/foto.png">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, odit. Fugiat aut praesentium nobis ad deserunt eos unde nostrum ullam hic mollitia nam quod nesciunt delectus possimus nihil consectetur pariatur, vel expedita. Distinctio nemo, autem enim laboriosam unde pariatur possimus iusto temporibus earum soluta natus deserunt qui ullam asperiores porro.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iusto sit ex iure adipisci distinctio harum impedit rem facere ipsam enim ipsum maxime, vitae est necessitatibus beatae dolore commodi similique numquam fugiat. Soluta accusantium dolorem voluptates ipsum porro sequi accusamus deleniti modi. Similique, vitae. Neque maiores vel libero ex eum odit id voluptas error voluptate animi. Harum consectetur ut eveniet!</p>
+                <div class="social-icons">
+                    <a href="#">Email</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Medium</a>
+                    <a href="#">Github</a>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-8">
+            <div class="blog">
+                <h2 onclick="toggleBlog(1)">Testimonial 1</h2>
+                <div class="blog-content" id="blogContent1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque earum sed, qui expedita nisi et error reiciendis distinctio possimus harum magnam totam iste deleniti quas vitae facilis praesentium. Velit, ab!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime nam eum dignissimos nulla reprehenderit autem eos explicabo distinctio, repellat, impedit ut, voluptatem facilis deleniti consequuntur dolorum vero! Harum, corrupti.</p>
+                    <div class="button-container">
+                        <a href="desired_link1.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <h2 onclick="toggleBlog(2)">Testimonial 2</h2>
+                <div class="blog-content" id="blogContent2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque earum sed, qui expedita nisi et error reiciendis distinctio possimus harum magnam totam iste deleniti quas vitae facilis praesentium. Velit, ab!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime nam eum dignissimos nulla reprehenderit autem eos explicabo distinctio, repellat, impedit ut, voluptatem facilis deleniti consequuntur dolorum vero! Harum, corrupti.</p>
+                    <div class="button-container">
+                        <a href="desired_link2.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <h2 onclick="toggleBlog(3)">Testimonial 3</h2>
+                <div class="blog-content" id="blogContent3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque earum sed, qui expedita nisi et error reiciendis distinctio possimus harum magnam totam iste deleniti quas vitae facilis praesentium. Velit, ab!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime nam eum dignissimos nulla reprehenderit autem eos explicabo distinctio, repellat, impedit ut, voluptatem facilis deleniti consequuntur dolorum vero! Harum, corrupti.</p>
+                    <div class="button-container">
+                        <a href="desired_link3.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <script>
+        function toggleBlog(index) {
+            var content = document.getElementById("blogContent" + index);
+            var arrow = content.previousElementSibling.querySelector("h2::after");
+
+            if (content.classList.contains("show")) {
+                content.classList.remove("show");
+                arrow.style.transform = "translateY(50%) rotate(0deg)"; /* Aşağı okun rotasyonunu sıfırla */
+            } else {
+                content.classList.add("show");
+                arrow.style.transform = "translateY(50%) rotate(180deg)"; /* Aşağı oku tersine çevir */
+            }
+        }
+    </script>
+</body>
+</html>
